@@ -1,0 +1,92 @@
+/* This is a single-line comment */
+
+
+.totalsheet{
+	margin-left: 40px;
+	margin-right: 40px;
+}
+
+.classinfo{
+	display:flex;
+}
+
+h2{
+	border:2px solid blue;
+}
+
+
+.mainsheet{
+	display: flex;
+}
+
+.charscores{
+	display: flex;	
+	justify-content: space-between;	
+}
+
+
+.statbox{
+	border:1px solid black;
+	margin:2px;
+}
+
+.skills{
+	display:flex;
+	flex-direction: column;	
+}
+
+.skillbox{
+	display:flex;
+	justify-content: space-between;
+	border:1px solid black;
+}
+
+.savingthrowbox{
+	display:flex;
+	justify-content: space-between;
+	border:1px solid black;
+}
+
+
+/*this deals with the tab box*/
+
+.detailinfo{
+}
+
+.infobox {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.infobox button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.infobox button:hover {
+  background-color: #ddd;
+}
+
+.infobox button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+
+  /*height:;*/
+  overflow: auto; 
+}
+
+/*end of tab box relevent code */
+

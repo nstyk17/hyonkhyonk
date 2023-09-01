@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="img/hehe.jpg">
+
+<link rel="stylesheet" href="css/sheetStyles.css">
+<link rel="stylesheet" href="css/generalTools.css">
+
+<script src="js/sheetScript.js"></script>
+
+<title> Hobbs </title>
+</head>
+
+
+<body onload="firstLoad()">
+<a href="index.html" style="color:White;">BACK DEMONS</a>
+
+<section class="totalsheet">
+<h1> Hobbs </h1>
+<a href="editHobbs.html">Edit the boi</a>
+
+<!-- Hewwo -->
+<section class ="classinfo">
+<h2 id="class"> Warlock</h2>
+<h2 id="subclass"> Celestial</h2>
+<h2>Background:</h2>
+<h2 id="background"> Outlander</h2>
+<h2>Race:</h2>
+<h2 id="race">Half-Elf</h2>
+<h2>Level: <span id="lvl"></span><h2>
+</section> <!-- end of charinfo section -->
+
+<section class ="charscores">
+<div class="statbox">
+<h5> Strength</h5>
+<button class="roll"><span id="str"></span></button>
+</div>
+<div class="statbox">
+<h5>Dexterity</h5> 
+<button class="roll"><span id="dex"></span></button>
+</div>
+<div class="statbox">
+<h5>Constitution</h5>
+<button class="roll"><span id="con"></span></button>
+</div>
+<div class="statbox">
+<h5>Intelligence</h5>
+<button class="roll"><span id="int"></span></button>
+</div>
+<div class="statbox">
+<h5>Wisdom</h5> 
+<button class="roll"><span id="wis"></span></button>
+</div>
+<div class="statbox">
+<h5>Charisma</h5>
+<button class="roll"><span id="cha"></span></button>
+</div>
+</section> <!-- end of charscores section -->
+
+<section id="hitpointsgen">
+<div id="hp">
+<h2> Hit Points </h2>
+<svg width=100% height="20">
+  <rect width=100% height="20" style="fill:rgb(255,0,0);stroke-width:0;"/>
+</svg>
+</div><!--end of hp-->
+<div id="temphp">
+<h2> Temp Hit Points</h2>
+<svg width=100% height="20">
+  <rect width=100% height="20" style="fill:rgb(64,239,240);stroke-width:0;"/>
+</svg>
+</div>
+<h2> Death Saving Throws </h2>
+</section><!-- end of hitpoints section -->
+
+<section class="mainsheet">
+
+<div class="savingthrows">
+<h2> Saving Throws </h2>
+
+<div class="savingthrowbox">
+<input type="checkbox" id="strength" name="strength">
+<label for="strength">Strength</label>
+<button><span id="strsvt"></span></button>
+</div>
+
+<div class="savingthrowbox">
+<input type="checkbox" id="dexterity" name="dexterity">
+<label for="dexterity">Dexterity</label>
+<button><span id="dexsvt"></span></button>
+</div>
+
+<div class="savingthrowbox">
+<input type="checkbox" id="constitution" name="constitution">
+<label for="constitution">Constitution</label>
+<button><span id="consvt"></span></button>
+</div>
+
+<div class="savingthrowbox">
+<input type="checkbox" id="intelligence" name="intelligence">
+<label for="intelligence">Intelligence</label>
+<button><span id="intsvt"></span></button>
+</div>
+
+<div class="savingthrowbox">
+<input type="checkbox" id="wisdom" name="wisdom">
+<label for="wisdom">Wisdom</label>
+<button><span id="wissvt"></span></button>
+</div>
+
+<div class="savingthrowbox">
+<input type="checkbox" id="charisma" name="charisma">
+<label for="charisma">Charisma</label>
+<button><span id="chasvt"></span></button>
+</div>
+</div><!-- End of savingthrows div -->
+
+
+
+<div class="skills"> <!-- This is for the Skills -->
+<h2> Skills </h2>
+
+<div class="skillbox">
+<input type="checkbox" id="acrobatics" name="acrobatics">
+<label for="acrobatics">Acrobatics (Dex)</label>
+<button><span id="acrobaticsb"></span></button>
+</div>
+
+<div class="skillbox">
+<input type="checkbox" id="animalhandling" name="animalhandling">
+<label for="animalhandling">Animal Handling (Wis)</label>
+<button><span id="animalhandlingb"></span></button>
+</div>
+
+<div class="skillbox">
+<input type="checkbox" id="arcana" name="arcana">
+<label for="arcana">Arcana (Int)</label>
+<button><span id="arcanab"></span></button>
+</div>
+
+<div class="skillbox">
+<input type="checkbox" id="athletics" name="athletics">
+<label for="athletics">Athletics (Str)</label>
+<button><span id="athleticsb"></span></button>
+</div>
+
+<div class="skillbox">
+<input type="checkbox" id="deception" name="deception">
+<label for="deception">Deception (Cha)</label>
+<button><span id="deceptionb"></span></button>
+</div>
+
+<div class="skillbox">
+<input type="checkbox" id="history" name="history">
+<label for="history">History (Int)</label>
+<button><span id="historyb"></span></button>
+</div>
+
+<div class="skillbox">
+<input type="checkbox" id="insight" name="insight">
+<label for="insight">Insight (Wis)</label>
+<button><span id="insightb"></span></button>
+</div>
+
+<div class="skillbox">
+<input type="checkbox" id="intimidation" name="intimidation">
+<label for="intimidation">Intimidation (Cha)</label>
+<button><span id="intimidationb"></span></button>
+</div>
+
+<div class="skillbox">
+<input type="checkbox" id="investigation" name="investigation">
+<label for="investigation">Investigation (Int)</label>
+<button><span id="investigationb"></span></button>
+</div>
+
+<div class="skillbox">
+<input type="checkbox" id="medicine" name="medicine">
+<label for="medicine">Medicine (Wis)</label>
+<button><span id="medicineb"></span></button>
+</div>
+
+<div class="skillbox">
+<input type="checkbox" id="nature" name="nature">
+<label for="nature">Nature (Int)</label>
+<button><span id="natureb"></span></button>
+</div>
+
+<div class="skillbox">
+<input type="checkbox" id="perception" name="perception">
+<label for="perception">Perception (Wis)</label>
+<button><span id="perceptionb"></span></button>
+</div>
+
+<div class="skillbox">
+<input type="checkbox" id="performance" name="performance">
+<label for="performance">Performance (Cha)</label>
+<button><span id="performanceb"></span></button>
+</div>
+
+<div class="skillbox">
+<input type="checkbox" id="persuasion" name="persuasion">
+<label for="persuasion">Persuasion (Cha)</label>
+<button><span id="persuasionb"></span></button>
+</div>
+
+<div class="skillbox">
+<input type="checkbox" id="religion" name="religion">
+<label for="religion">Religion (Int)</label>
+<button><span id="religionb"></span></button>
+</div>
+
+<div class="skillbox">
+<input type="checkbox" id="sleightofhand" name="sleightofhand">
+<label for="sleightofhand">Sleight of Hand (Dex)</label>
+<button><span id="sleightofhandb"></span></button>
+</div>
+
+<div class="skillbox">
+<input type="checkbox" id="stealth" name="stealth">
+<label for="stealth">Stealth (Dex)</label>
+<button class="roll"><span id="stealthb"></span></button>
+</div>
+
+<div class="skillbox">
+<input type="checkbox" id="survival" name="survival">
+<label for="survival">Survival (Wis)</label>
+<button><span id="survivalb"></span></button>
+</div>
+</div> <!-- End of Skilss div -->
+
+<section class="proficiencies">
+<div class="combattrio">
+<h3>Armor Class</h3>
+<h3>Initiative </h3>
+<h3>Speed </h3>
+</div>
+
+<h2>Proficiency Bonus: <span id="profbonus"></span> </h2>
+<h2>Armor</h2>
+<h2>Languages</h2>
+<h2>Tools</h2>
+</section>
+
+<section class="detailinfo">
+<div class="infobox">
+<button class="infolinks" onclick="openInfo(event, 'actions')" id="defaultOpenInfo">Action</button>
+<button class="infolinks" onclick="openInfo(event, 'spells')">Spells</button>
+<button class="infolinks" onclick="openInfo(event, 'features')">Features/Traits</button>
+<button class="infolinks" onclick="openInfo(event, 'equipment')">Equipment</button>
+<button class="infolinks" onclick="openInfo(event, 'extra')">Extra</button>
+</div><!--end of infobox-->
+
+
+<div id="actions" class="tabcontent">
+<h2>Actions </h2>
+<p>I am an Action </p>
+</div> <!-- End of actions div -->
+
+<div id="spells" class="tabcontent">
+<h2>Spells </h2>
+<p>I am a spell</p>
+</div> <!-- End of spells div -->
+
+
+<div id="features" class="tabcontent">
+<h2>Features/Traits </h2>
+<p>I am a feature/trait</p>
+</div> <!-- End of features div -->
+
+<div id="equipment" class="tabcontent">
+<h2>Equipment </h2>
+<p>I am equipment </p>
+</div> <!-- End of equipment div -->
+
+
+<div id="extra" class="tabcontent">
+<h2>Extra </h2>
+<p>I am an extra </p>
+</div> <!-- End of equipment div -->
+
+</section><!-- end of detailinfo section -->
+</section><!-- end of mainsheet section -->
+</section><!-- end of totalsheet section -->
+
+<script>
+
+window.onclick = function(){
+	updateStats();
+}
+
+</script>
+
+</body>
+</html>
